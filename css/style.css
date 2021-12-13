@@ -29,6 +29,12 @@ body {
   align-items: center;
   padding: 5rem 3rem 3rem 3rem;
 }
+@media (min-width: 1140px) {
+  .bootcamp {
+    flex-direction: row-reverse;
+    padding: 5rem 8rem 3rem 4rem;
+  }
+}
 .bootcamp__pictures {
   background-image: url("/images/pattern-bg.svg");
   background-repeat: no-repeat;
@@ -40,9 +46,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 810px) {
+  .bootcamp__pictures {
+    padding: 8rem;
+  }
+}
+@media (min-width: 1140px) {
+  .bootcamp__pictures {
+    width: 230rem;
+  }
+}
 .bootcamp__img {
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 10px 30px 30px;
 }
 .bootcamp__arrows {
   display: flex;
@@ -52,9 +68,29 @@ body {
   border-radius: 2rem;
   margin-top: -2rem;
 }
+@media (min-width: 1140px) {
+  .bootcamp__arrows {
+    padding: 0 1.7rem;
+    border-radius: 3rem;
+    margin-top: -3rem;
+    margin-left: -30rem;
+    width: 10rem;
+    height: 5rem;
+    justify-content: space-between;
+  }
+}
 .bootcamp__button {
   background: transparent;
   border: none;
+}
+@media (min-width: 1140px) {
+  .bootcamp__arrow {
+    transition: all 0.2s;
+  }
+  .bootcamp__arrow:hover {
+    width: 1.5rem;
+    cursor: pointer;
+  }
 }
 .bootcamp__text {
   color: #202046;
@@ -65,20 +101,63 @@ body {
   padding: 3rem 0;
   text-align: center;
 }
+@media (min-width: 810px) {
+  .bootcamp__text {
+    padding: 3rem 13rem;
+  }
+}
+@media (min-width: 1140px) {
+  .bootcamp__text {
+    background-position: top 2rem left 23rem;
+    background-size: 12rem;
+    padding: 8rem 13rem;
+    margin-right: -33rem;
+    text-align: left;
+  }
+}
 .bootcamp__info {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.3;
 }
+@media (min-width: 1140px) {
+  .bootcamp__info {
+    font-size: 3.2rem;
+    max-width: 245rem;
+  }
+}
+.bootcamp__name-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  gap: 0.5rem;
+}
+@media (min-width: 1140px) {
+  .bootcamp__name-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
 .bootcamp__name {
   font-weight: 700;
   font-size: 1.6rem;
-  margin: 3rem 0 0.5rem 0;
+}
+@media (min-width: 1140px) {
+  .bootcamp__name {
+    font-size: 1.8rem;
+  }
 }
 .bootcamp__status {
   color: #babacf;
-  font-size: 1.6rem;
   font-weight: 500;
+  font-size: 1.6rem;
+}
+@media (min-width: 1140px) {
+  .bootcamp__status {
+    font-size: 1.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
