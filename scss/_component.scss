@@ -32,6 +32,8 @@
   &__img {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.2) 10px 30px 30px;
+    opacity: 0.1;
+    animation: transparent 1s ease-out alternate forwards;
   }
 
   &__arrows {
@@ -41,6 +43,7 @@
     padding: 1rem;
     border-radius: 2rem;
     margin-top: -2rem;
+    z-index: 1;
     @media (min-width: 1140px) {
       padding: 0 1.7rem;
       border-radius: 3rem;
@@ -89,6 +92,8 @@
       padding: 8rem 13rem;
       margin-right: -33rem;
       text-align: left;
+      transform: translateX(-100rem);
+      animation: to-right 1s ease-out alternate forwards;
     }
   }
 
@@ -132,5 +137,25 @@
     @media (min-width: 1140px) {
       font-size: 1.8rem;
     }
+  }
+}
+
+@keyframes to-right {
+  from {
+    transform: translateX(-100rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transparent {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -59,6 +59,8 @@ body {
 .bootcamp__img {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.2) 10px 30px 30px;
+  opacity: 0.1;
+  animation: transparent 1s ease-out alternate forwards;
 }
 .bootcamp__arrows {
   display: flex;
@@ -67,6 +69,7 @@ body {
   padding: 1rem;
   border-radius: 2rem;
   margin-top: -2rem;
+  z-index: 1;
 }
 @media (min-width: 1140px) {
   .bootcamp__arrows {
@@ -113,6 +116,8 @@ body {
     padding: 8rem 13rem;
     margin-right: -33rem;
     text-align: left;
+    transform: translateX(-100rem);
+    animation: to-right 1s ease-out alternate forwards;
   }
 }
 .bootcamp__info {
@@ -157,6 +162,23 @@ body {
 @media (min-width: 1140px) {
   .bootcamp__status {
     font-size: 1.8rem;
+  }
+}
+
+@keyframes to-right {
+  from {
+    transform: translateX(-100rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes transparent {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
   }
 }
 
