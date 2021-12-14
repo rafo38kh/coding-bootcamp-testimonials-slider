@@ -26,7 +26,7 @@ This is a solution to the [Coding Bootcamp Testimonials Slider Challenge on Fron
 ### Links
 
 - Solution URL: []()
-- Live Site URL: []()
+- Live Site URL: [https://rafo38kh.github.io/coding-bootcamp-testimonials-slider/](https://rafo38kh.github.io/coding-bootcamp-testimonials-slider/)
 
 ## My process
 
@@ -35,6 +35,7 @@ This is a solution to the [Coding Bootcamp Testimonials Slider Challenge on Fron
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- Vanilla JS
 - Mobile-first workflow
 
 ## Author

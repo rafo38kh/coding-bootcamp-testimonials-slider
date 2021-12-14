@@ -1,11 +1,10 @@
-const leftButton = document.querySelector(".js-left");
-const rightButton = document.querySelector(".js-right");
+const button = document.querySelectorAll(".js-button");
 const img = document.querySelector(".js-img");
 const info = document.querySelector(".js-info");
 const name = document.querySelector(".js-name");
 const status = document.querySelector(".js-status");
 
-let count = 1;
+let count = 0;
 
 const base = [
   {
@@ -27,41 +26,22 @@ const base = [
   },
 ];
 
-rightButton.addEventListener("click", () => {
-  if (count >= base.length) {
-    img.src = base[count - base.length].picture;
-    info.innerHTML = base[count - base.length].description;
-    name.innerHTML = base[count - base.length].fullName;
-    status.innerHTML = base[count - base.length].position;
-    count = 1;
-    // count++;
-    console.log("right one");
-  } else {
-    img.src = base[count].picture;
-    info.innerHTML = base[count].description;
-    name.innerHTML = base[count].fullName;
-    status.innerHTML = base[count].position;
-    count++;
-    console.log("right two");
-  }
-});
+const visible = function () {
+  setTimeout(() => {
+    img.classList.add("active__visible");
+  }, 500);
 
-leftButton.addEventListener("click", () => {
-  if (count >= 0) {
+  img.classList.remove("active__visible");
+};
+
+button.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    visible();
     img.src = base[count].picture;
     info.innerHTML = base[count].description;
     name.innerHTML = base[count].fullName;
     status.innerHTML = base[count].position;
-    count--;
-    console.log("left one");
-  } else {
-    count = base.length - 1;
-    console.log(count);
-    img.src = base[count].picture;
-    info.innerHTML = base[count].description;
-    name.innerHTML = base[count].fullName;
-    status.innerHTML = base[count].position;
-    count--;
-    console.log("left two");
-  }
-});
+
+    count === 0 ? count++ : count--;
+  })
+);

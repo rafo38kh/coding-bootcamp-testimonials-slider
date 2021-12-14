@@ -16,7 +16,7 @@ body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   background-color: #fff;
-  background-image: url("/images/pattern-curve.svg");
+  background-image: url("../images/pattern-curve.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -36,7 +36,7 @@ body {
   }
 }
 .bootcamp__pictures {
-  background-image: url("/images/pattern-bg.svg");
+  background-image: url("../images/pattern-bg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 3rem;
@@ -59,8 +59,13 @@ body {
 .bootcamp__img {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.2) 10px 30px 30px;
-  opacity: 0.1;
-  animation: transparent 1s ease-out alternate forwards;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+.bootcamp__img.active__visible {
+  visibility: visible;
+  opacity: 1;
 }
 .bootcamp__arrows {
   display: flex;
@@ -91,7 +96,8 @@ body {
     transition: all 0.2s;
   }
   .bootcamp__arrow:hover {
-    width: 1.5rem;
+    transform: scale(1.4);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     cursor: pointer;
   }
 }
@@ -171,14 +177,6 @@ body {
   }
   to {
     transform: translateX(0);
-  }
-}
-@keyframes transparent {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
   }
 }
 
