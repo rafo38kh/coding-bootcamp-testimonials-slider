@@ -25,7 +25,7 @@ This is a solution to the [Coding Bootcamp Testimonials Slider Challenge on Fron
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-with-bem-css-flexbox-and-vanilla-js-150CtdOI0](https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-with-bem-css-flexbox-and-vanilla-js-150CtdOI0)
 - Live Site URL: [https://rafo38kh.github.io/coding-bootcamp-testimonials-slider/](https://rafo38kh.github.io/coding-bootcamp-testimonials-slider/)
 
 ## My process

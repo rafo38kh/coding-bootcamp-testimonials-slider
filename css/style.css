@@ -109,6 +109,7 @@ body {
   background-size: 6rem;
   padding: 3rem 0;
   text-align: center;
+  z-index: 1;
 }
 @media (min-width: 810px) {
   .bootcamp__text {
@@ -122,6 +123,8 @@ body {
     padding: 8rem 13rem;
     margin-right: -33rem;
     text-align: left;
+    transform: translateX(-100rem);
+    animation: to-right 1s ease-out alternate forwards;
   }
 }
 .bootcamp__info {
