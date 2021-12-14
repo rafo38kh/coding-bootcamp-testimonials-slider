@@ -36,12 +36,12 @@ const visible = function () {
 
 button.forEach((btn) =>
   btn.addEventListener("click", () => {
-    visible();
     img.src = base[count].picture;
     info.innerHTML = base[count].description;
     name.innerHTML = base[count].fullName;
     status.innerHTML = base[count].position;
 
     count === 0 ? count++ : count--;
+    visible();
   })
 );
